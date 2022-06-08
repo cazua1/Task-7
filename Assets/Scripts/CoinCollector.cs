@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CoinCollector : MonoBehaviour
 {
-    private int _coinCounter;
+    private int _ñounter;
 
     private void FixedUpdate()
     {
@@ -14,12 +14,12 @@ public class CoinCollector : MonoBehaviour
         if (collision.TryGetComponent<Coin>(out Coin coin))
         {
             Destroy(coin.gameObject);
-            _coinCounter++;            
+            _ñounter++;            
         }
     }
 
     private void ShowCoinsCounter()
     {
-        Debug.Log(_coinCounter);
+        Debug.Log(_ñounter);
     }
 }
